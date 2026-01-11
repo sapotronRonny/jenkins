@@ -1,6 +1,10 @@
 pipeline {
     agent any
-
+    environment {
+        // Esto fuerza a Jenkins a buscar el ejecutable en la carpeta donde lo instaló
+        DOCKER_HOME = tool 'Dockertool'
+        PATH = "${env.DOCKER_HOME}/bin:${env.PATH}"
+    }
     tools {
         nodejs "Node18" // Configura una instalación de Node.js en Jenkins
         dockerTool 'Dockertool'  // Cambia el nombre de la herramienta según tu configuración en Jenkins
