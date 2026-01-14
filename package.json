@@ -4,9 +4,24 @@
     "description": "Mi aplicación Node.js",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js"
+        "start": "node index.js",
+        "test": "jest"
     },
     "dependencies": {
-      "express": "^4.18.2"
-    }
-  }
+        "express": "^4.22.1",
+        "jest": "^30.2.0",
+        "supertest": "^7.2.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sapotronRonny/jenkins.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/sapotronRonny/jenkins/issues"
+    },
+    "homepage": "https://github.com/sapotronRonny/jenkins#readme"
+}
